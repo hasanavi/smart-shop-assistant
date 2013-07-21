@@ -63,7 +63,7 @@
 			
 			var item = products[id-1];
 			$locationdetails = $('#productlocationholder');
-			$locationdetails.append("<h3>Product - "+item.name+"</h3> <img src='"+item.img+"' /> <h1>Location: "+item.loc+"</h1>");
+			$locationdetails.append("<h3>Product - "+item.name+"</h3> <img style='width:120px' src='"+item.img+"' /> <h1 id='loc'>Location: "+item.loc+"</h1>");
 			if(item.offer.length > 0)
 				$('#specialOfferHolder').html("Hey did you know There's a special offer<br/><b>"+item.offer+"</b>");
 		});
