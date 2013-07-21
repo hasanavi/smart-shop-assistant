@@ -1,0 +1,9 @@
+[
+	{"id": 1 ,"name": "Milk", "img":"images/milk.jpg","loc":"3A"},
+	{"id": 2 ,"name": "British Beef", "img":"images/meat.jpg","loc":"3A"},
+	{"id": 3 ,"name": "Sausage", "img":"images/sausage.jpg","loc":"3A"},
+	{"id": 4 ,"name": "Apple", "img":"images/apple.jpg","loc":"3A"},
+	{"id": 5 ,"name": "Banana", "img":"images/banana.gif","loc":"3A"},
+	{"id": 6 ,"name": "Egg", "img":"images/egg.jpg","loc":"3A"},
+	{"id": 7 ,"name": "British Chicken", "img":"images/chicken.JPG","loc":"3A"}
+]

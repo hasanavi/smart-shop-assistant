@@ -1,0 +1,27 @@
+{
+    "version": "1",
+    "name": "Smart Shop Assistant",
+    "launch_path": "index.html",
+    "description": "Easy shopping",
+    "icons": {
+        "16": "/images/ic_launcher.png",
+        "32": "/images/ic_launcher.png",
+        "48": "/images/ic_launcher.png",
+        "64": "/images/ic_launcher.png",
+        "128": "/images/ic_launcher.png"
+    },
+    "developer": {
+        "name": "Hasan Azizul Haque",
+        "url": "http://hasanavi.me"
+    },
+    "installs_allowed_from": ["*"],
+    "default_locale": "en",
+    "permissions": {
+        "desktop-notification": {
+            "description" : "To show notifications"
+        },
+        "geolocation": {
+            "description" : "Marking out user location"
+        }
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width">
+	
+	<title>Smart Shop Assistant</title>  
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/headers.css" />
+	<link rel="stylesheet" href="css/lists.css" />
+</head>
+<body>
+	<section role="region" id='app-header' style='display:none;'>
+        <header>
+            <!-- Icon that will indicate whether you are online or offline - enabled if you are using offline/appcache (see above) -->
+            <h1>
+                Smart shop assistant
+            </h1>
+        </header>
+    </section>
+	<div id='wrapper' style='display:none;'>
+		<section data-type="list">
+			<header>ASDA - Greenwich. How can we help you?</header>
+			<ul>
+				<li id='proloc'>
+					<a href="productlocator.html"><p>Product locator</p></a>
+				</li>
+				<li id='spoff'>
+					<a href="specialoffer.html"><p>Special Offers</p></a>
+				</li>
+				<li id='faq'>
+					<a href="faq.html"><p>FAQ</p></a>
+				</li>
+			</ul>
+		</section>
+	</div>
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script>
+		$(function(){
+			var r;
+			//r=confirm("Do you need assistance?");
+			
+			r = r | true;
+			if(r)
+				$('#app-header, #wrapper').show();			
+		});
+	</script>
+</body>
+</html>

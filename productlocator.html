@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width">
+	
+	<title>Smart Shop Assistant</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/headers.css" />
+	<link rel="stylesheet" href="css/lists.css" />
+	<link rel="stylesheet" href="css/input_areas.css" />
+</head>
+<body>
+	<section role="region" id='app-header'>
+        <header>
+            <!-- Icon that will indicate whether you are online or offline - enabled if you are using offline/appcache (see above) -->
+            <a id="btn-lists-back" href="index.html"><span class="icon icon-back">back</span></a>
+            <h1>
+                Smart shop assistant
+            </h1>
+        </header>
+    </section>
+	<div id='wrapper'>
+		<section data-type="list">
+			<header>ASDA - Greenwich. Product Locator</header>
+			<input type="text" placeholder="Search for your product" id='search'>
+			<ul id='productsHolder'>
+				<!-- <li>
+					<aside class="pack-end">
+						<img alt="placeholder" src="images/milk.jpg">
+					</aside>
+					<a href="#">
+						<p>Milk</p>
+					</a>
+				</li>
+				<li>
+					<aside class="pack-end">
+						<img alt="placeholder" src="images/meat.jpg">
+					</aside>
+					<a href="#">
+						<p>British Beef</p>
+					</a>
+				</li>
+				<li>
+					<aside class="pack-end">
+						<img alt="placeholder" src="images/sausage.jpeg">
+					</aside>
+					<a href="#">
+						<p>Sausage</p>
+					</a>
+				</li>
+				<li>
+					<aside class="pack-end">
+						<img alt="placeholder" src="images/apple.jpg">
+					</aside>
+					<a href="#">
+						<p>Apple</p>
+					</a>
+				</li>
+				<li>
+					<aside class="pack-end">
+						<img alt="placeholder" src="images/banana.gif">
+					</aside>
+					<a href="#">
+						<p>Banana</p>
+					</a>
+				</li>
+				<li>
+					<aside class="pack-end">
+						<img alt="placeholder" src="images/egg.jpg">
+					</aside>
+					<a href="#">
+						<p>Egg</p>
+					</a>
+				</li>
+				<li>
+					<aside class="pack-end">
+						<img alt="placeholder" src="images/chicken.JPG">
+					</aside>
+					<a href="#">
+						<p>British Chicken</p>
+					</a>
+				</li> -->
+			</ul>
+		</section>
+	</div>
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var products = [
+				{"id": 1 ,"name": "Milk", "img":"images/milk.jpg","loc":"Lane 3, Top Left"},
+				{"id": 2 ,"name": "British Beef", "img":"images/meat.jpg","loc":"Lane 2, Bottom Left"},
+				{"id": 3 ,"name": "Sausage", "img":"images/sausage.jpeg","loc":"Lane 13, Top Left"},
+				{"id": 4 ,"name": "Apple", "img":"images/apple.jpg","loc":"Lane 9, Top Right"},
+				{"id": 5 ,"name": "Banana", "img":"images/banana.gif","loc":"Lane 31, Middle Top"},
+				{"id": 6 ,"name": "Egg", "img":"images/egg.jpg","loc":"Lane 30, Top Right"},
+				{"id": 7 ,"name": "British Chicken", "img":"images/chicken.JPG","loc":"Lane 15B, Middle"}
+			];
+
+			$productholder = $('#productsHolder');
+			$.each(products,function(index, item){
+				var item = '<li> <aside class="pack-end"> <img alt="placeholder" src="'+item.img+'"> </aside> <a href="maplocation.html#'+item.id+'"> <p>'+item.name+'</p> </a> </li>'; 
+				$productholder.append(item);
+			});
+
+			$('#search').on('change',function(){
+				alert('here');
+			})
+		});
+	</script>
+</body>
+</html>
