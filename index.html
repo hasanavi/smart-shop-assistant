@@ -38,8 +38,11 @@
 	<script type="text/javascript" src="js/script.js"></script>
 	<script>
 		$(function(){
-			var r;
-			//r=confirm("Do you need assistance?");
+			var r,
+				na = window.location.hash;
+
+			if(na.length == 0)
+				r=confirm("It's ASDA Greenwich store. Do you need assistance?");
 			
 			r = r | true;
 			if(r)
