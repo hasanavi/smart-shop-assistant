@@ -104,8 +104,15 @@
 				$productholder.append(item);
 			});
 
-			$('#search').on('change',function(){
-				alert('here');
+			$('#search').on('keyup',function(){
+				var searchTxt = $(this).val().toLowerCase();
+				$productholder.empty();
+				$.each(products,function(index, item){
+					if(item.name.toLowerCase().search(searchTxt) > -1){
+						var item = '<li> <aside class="pack-end"> <img alt="placeholder" src="'+item.img+'"> </aside> <a href="maplocation.html#'+item.id+'"> <p>'+item.name+'</p> </a> </li>'; 
+						$productholder.append(item);
+					}
+				});
 			})
 		});
 	</script>

@@ -123,3 +123,8 @@ footer {
 [role="toolbar"] li button.update {
     background-image: url("../images/toolbars/icons/update.png");
 }
+
+#specialOfferHolder{
+    color: red;
+    font-size: 20px;
+}
